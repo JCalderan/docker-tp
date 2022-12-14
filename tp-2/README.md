@@ -19,6 +19,16 @@ ATLAS_URI=${MONGODB_URI}
 DB_NAME=${MONGODB_DB_NAME}
 ```
 
+Replace the requirements.txt file with the following content:
+```bash
+fastapi[all]==0.88.0
+pydantic==1.10.2
+pymongo[srv]==4.3.3
+pytest==7.2.0
+python-dotenv==0.21.0
+uvicorn==0.20.0
+```
+
 ### Build the image
 First create the Dockerfile
 ```bash
